@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/appitem" android:background="@drawable/appblue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/app_icon" android:layout_width="@dimen/y64" android:layout_height="@dimen/y64" android:layout_marginTop="@dimen/y8" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/background_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@color/gray_8f_ll" android:layout_alignTop="@id/app_name" android:layout_alignBottom="@id/app_name" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/y16" android:textColor="@color/launcher_default_font" android:ellipsize="marquee" android:gravity="center" android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/y5" android:maxWidth="@dimen/y64" android:scrollHorizontally="true" android:singleLine="true" android:layout_below="@id/app_icon" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" />
+</RelativeLayout>

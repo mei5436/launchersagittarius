@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="AppThemeTv" parent="@android:style/Theme.NoTitleBar.Fullscreen" />
+    <style name="WhiteColorFont" parent="@android:style/TextAppearance.Large">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WhiteColorFont22">
+        <item name="android:textSize">@dimen/ts_WhiteColorFont22</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WhiteColorFont32">
+        <item name="android:textSize">@dimen/ts_WhiteColorFont32</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WhiteColorFont24">
+        <item name="android:textSize">@dimen/ts_WhiteColorFont24</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="WhiteColorFont14">
+        <item name="android:textSize">@dimen/ts_WhiteColorFont14</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="calender_year">
+        <item name="android:textSize">@dimen/year_text_size</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingLeft">@dimen/year_title_paddingleft</item>
+    </style>
+    <style name="calender_month">
+        <item name="android:textSize">@dimen/month_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="calender_day">
+        <item name="android:textSize">@dimen/day_text_size</item>
+        <item name="android:gravity">center|right|top</item>
+    </style>
+    <style name="title_value_style">
+        <item name="android:textSize">@dimen/y24</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">bottom|center|left</item>
+        <item name="android:background">@drawable/title_value_style_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+</resources>

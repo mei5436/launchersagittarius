@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
+
+    defaultConfig {
+        applicationId 'com.toptech.launcher'
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    useLibrary "org.apache.http.legacy"
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compileOnly files('libs/com.mstar.android.jar')
+    implementation "com.android.support:support-v4:28.0.0"
+    // some dependencies
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewWithTTF">
+        <attr name="ttf_name" format="string" />
+    </declare-styleable>
+    <!-- 顶层控件属性 -->
+    <declare-styleable name="MainUpView">
+        <attr name="upImageRes"  format="reference" />
+        <attr name="shadowImageRes"  format="reference" />
+    </declare-styleable>
+    <declare-styleable name="reflectItemView">
+        <attr name="isReflect" format="boolean" />
+    </declare-styleable>
+
+    <attr name="info" format="string" />
+    <attr name="isTvScreen" format="boolean" />
+    <attr name="isDrawUpRect" format="boolean" />
+
+    <attr name="lv_text" format="string" />
+    <attr name="lv_text_color" format="color" />
+    <attr name="lv_text_size" format="dimension" />
+    <attr name="lv_text_bold" format="boolean" />
+    <attr name="lv_text_all_caps" format="boolean" />
+    <attr name="lv_background_color" format="color" />
+    <attr name="lv_min_size" format="dimension" />
+    <attr name="lv_padding" format="dimension" />
+    <attr name="lv_gravity">
+        <enum name="TOP_LEFT" value="51" />
+        <enum name="TOP_RIGHT" value="53" />
+        <enum name="BOTTOM_LEFT" value="83" />
+        <enum name="BOTTOM_RIGHT" value="85" />
+    </attr>
+    <attr name="lv_fill_triangle" format="boolean" />
+    <attr name="cursorRes" format="reference" />
+    <attr name="textColorDefault" format="color" />
+    <attr name="textColorSelected" format="color" />
+    <attr name="titleWidth" format="dimension" />
+    <attr name="titleHeight" format="dimension" />
+    <attr name="titleSpace" format="dimension" />
+    <attr name="textSize" format="dimension" />
+    <attr name="dividerHeight" format="dimension" />
+    <attr name="durationScroll" format="integer" />
+    <attr name="scalable" format="boolean" />
+    <attr name="scale" format="float" />
+    <attr name="animationType">
+        <enum name="DEFAULT" value="0" />
+        <enum name="TRANSLATE" value="1" />
+    </attr>
+    <attr name="durationLarge" format="integer" />
+    <attr name="durationSmall" format="integer" />
+    <attr name="delay" format="integer" />
+    <attr name="cursorWidth" format="dimension" />
+    <attr name="cursorHeight" format="dimension" />
+    <attr name="cursorMarginLeft" format="dimension" />
+    <attr name="cursorMarginTop" format="dimension" />
+    <attr name="cursorMarginRight" format="dimension" />
+    <attr name="cursorMarginBottom" format="dimension" />
+</resources>

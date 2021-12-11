@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.toptech.launcher.ui.TopRightStatusBar
+            android:id="@id/top_right_status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+        <com.toptech.launcher.ui.SmoothHorizontalScrollView
+            android:id="@id/myHorizontalScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/x60"
+            android:fillViewport="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none">
+
+            <com.toptech.launcher.ui.MainLayout
+                android:id="@id/main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/y40"
+                android:layout_marginRight="@dimen/y40">
+
+                <FrameLayout
+                    android:id="@id/title0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/main_TV"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/y15"
+                    android:clipChildren="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/title_TV"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/x30"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/main_TV"
+                    android:layout_width="@dimen/y430"
+                    android:layout_height="@dimen/x350"
+                    android:layout_below="@id/title0"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusRight="@id/liveshow"
+                    android:nextFocusUp="@id/page_search"
+                    android:nextFocusDown="@id/hostory">
+
+                    <com.toptech.launchersagittarius.tv.TVView
+                        android:id="@id/tv_surface_view"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="@dimen/y3"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusRight="@id/liveshow"
+                        android:nextFocusDown="@id/hostory" />
+
+                    <ImageView
+                        android:id="@id/shade"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/background8" />
+
+                    <com.toptech.launcher.ui.PopInputSource
+                        android:id="@id/pop_inputsource"
+                        android:layout_width="@dimen/y95"
+                        android:layout_height="fill_parent"
+                        android:background="@color/popup_source_menu"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/page_record"
+                    android:layout_width="@dimen/y430"
+                    android:layout_height="@dimen/x80"
+                    android:layout_below="@id/main_TV"
+                    android:layout_marginTop="@dimen/y10"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@id/history"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/play_history" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@dimen/y10"
+                        android:text="@string/history"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x25"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_search"
+                    android:layout_width="@dimen/y430"
+                    android:layout_height="@dimen/x80"
+                    android:layout_below="@id/page_record"
+                    android:layout_marginTop="@dimen/y10"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/main_TV"
+                    app:isReflect="true">
+
+                    <ImageView
+                        android:id="@id/search"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/serch" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="@dimen/y10"
+                        android:text="@string/search"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x25"
+                        android:textStyle="bold" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <FrameLayout
+                    android:id="@id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/y50"
+                    android:layout_toRightOf="@id/main_TV"
+                    android:clipChildren="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x15"
+                        android:text="@string/title_1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/x30"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/page_liveshow"
+                    android:layout_width="@dimen/y430"
+                    android:layout_height="@dimen/x265"
+                    android:layout_below="@id/title1"
+                    android:layout_alignLeft="@id/title1"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageSwitcher
+                        android:id="@id/liveshow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusUp="@id/page_child"
+                        android:nextFocusDown="@id/child"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/liveshow" />
+                </FrameLayout>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_child"
+                    android:layout_width="@dimen/y180"
+                    android:layout_height="@dimen/x265"
+                    android:layout_below="@id/page_liveshow"
+                    android:layout_alignLeft="@id/page_liveshow"
+                    android:layout_marginTop="@dimen/x8"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:isReflect="true">
+
+                    <ImageSwitcher
+                        android:id="@id/child"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusDown="@id/page_liveshow"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/child" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_variety_show"
+                    android:layout_width="@dimen/y240"
+                    android:layout_height="@dimen/x265"
+                    android:layout_alignTop="@id/page_child"
+                    android:layout_marginLeft="@dimen/y8"
+                    android:layout_toRightOf="@id/page_child"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:isReflect="true">
+
+                    <ImageSwitcher
+                        android:id="@id/variety_show"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusDown="@id/page_liveshow"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/variety" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <FrameLayout
+                    android:id="@id/page_movies"
+                    android:layout_width="@dimen/y180"
+                    android:layout_height="@dimen/x265"
+                    android:layout_below="@id/title1"
+                    android:layout_marginLeft="@dimen/y8"
+                    android:layout_toRightOf="@id/page_liveshow"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageSwitcher
+                        android:id="@id/movies"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusUp="@id/page_jilu"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/movies" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/page_teleplay"
+                    android:layout_width="@dimen/y180"
+                    android:layout_height="@dimen/x265"
+                    android:layout_below="@id/title1"
+                    android:layout_marginLeft="@dimen/y8"
+                    android:layout_toRightOf="@id/page_movies"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageSwitcher
+                        android:id="@id/telepaly"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusUp="@id/page_quanjuhe"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/teleplay" />
+                </FrameLayout>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_jilu"
+                    android:layout_width="@dimen/y180"
+                    android:layout_height="@dimen/x265"
+                    android:layout_alignLeft="@id/page_movies"
+                    android:layout_alignTop="@id/page_variety_show"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    app:isReflect="true">
+
+                    <ImageSwitcher
+                        android:id="@id/jilu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusDown="@id/page_movies"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/record" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_quanjuhe"
+                    android:layout_width="@dimen/y180"
+                    android:layout_height="@dimen/x265"
+                    android:layout_alignLeft="@id/page_teleplay"
+                    android:layout_alignTop="@id/page_jilu"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/page_teleplay"
+                    app:isReflect="true">
+
+                    <ImageSwitcher
+                        android:id="@id/quanjuhe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/quanjuhe" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <FrameLayout
+                    android:id="@id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y50"
+                    android:layout_marginBottom="@dimen/x15"
+                    android:layout_toRightOf="@id/page_teleplay"
+                    android:clipChildren="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/title_2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/x30"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/page_dangbei"
+                    android:layout_width="@dimen/y430"
+                    android:layout_height="@dimen/x265"
+                    android:layout_below="@id/title2"
+                    android:layout_marginLeft="@dimen/y50"
+                    android:layout_toRightOf="@id/page_teleplay"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageSwitcher
+                        android:id="@id/dangbei"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/dangbei" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@id/page_localmm"
+                    android:layout_width="@dimen/y200"
+                    android:layout_height="@dimen/x265"
+                    android:layout_alignTop="@id/page_dangbei"
+                    android:layout_marginLeft="@dimen/y8"
+                    android:layout_toRightOf="@id/page_dangbei"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <ImageView
+                        android:id="@id/localmm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cmovies" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/localmm" />
+                </FrameLayout>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_recommendation"
+                    android:layout_width="@dimen/y430"
+                    android:layout_height="@dimen/x265"
+                    android:layout_alignLeft="@id/page_dangbei"
+                    android:layout_alignTop="@id/page_quanjuhe"
+                    android:clickable="true"
+                    android:descendantFocusability="afterDescendants"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/page_dangbei"
+                    app:isReflect="true">
+
+                    <ImageSwitcher
+                        android:id="@id/recommendation"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@id/recommendation_title"
+                        style="@style/title_value_style"
+                        android:text="@string/recommendation_list" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_settings"
+                    android:layout_width="@dimen/y200"
+                    android:layout_height="@dimen/x265"
+                    android:layout_alignLeft="@id/page_localmm"
+                    android:layout_alignTop="@id/page_recommendation"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusDown="@id/page_localmm"
+                    app:isReflect="true">
+
+                    <ImageView
+                        android:id="@id/setting"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/setting" />
+
+                    <TextView
+                        style="@style/title_value_style"
+                        android:text="@string/setting" />
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <FrameLayout
+                    android:id="@id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/y50"
+                    android:layout_marginBottom="@dimen/x15"
+                    android:layout_toRightOf="@id/page_localmm"
+                    android:clipChildren="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/title_3"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/x30"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <com.toptech.launcher.ui.ReflectItemView
+                    android:id="@id/page_gridview"
+                    android:layout_width="@dimen/y800"
+                    android:layout_height="@dimen/x500"
+                    android:layout_below="@id/title3"
+                    android:layout_alignLeft="@id/title3"
+                    android:descendantFocusability="afterDescendants"
+                    android:nextFocusLeft="@id/page_localmm"
+                    app:isReflect="true">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <GridView
+                            android:id="@id/page3_gridview"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/y430"
+                            android:columnWidth="@dimen/y90"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:horizontalSpacing="10.0dip"
+                            android:listSelector="@android:color/transparent"
+                            android:nextFocusDown="@id/page_settings"
+                            android:numColumns="4"
+                            android:scrollbars="none"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10.0dip" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/y50"
+                            android:layout_below="@id/page3_gridview"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bottom"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </com.toptech.launcher.ui.ReflectItemView>
+
+                <FrameLayout
+                    android:id="@id/space3"
+                    android:layout_width="@dimen/y50"
+                    android:layout_height="@dimen/x140"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/page_gridview"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </FrameLayout>
+            </com.toptech.launcher.ui.MainLayout>
+        </com.toptech.launcher.ui.SmoothHorizontalScrollView>
+
+        <com.toptech.launcher.ui.MainUpView
+            android:id="@id/mainUpView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,360 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_31 (Sun Microsystems Inc.)
+
+Name: res/drawable-hdpi/teleplay.png
+SHA1-Digest: Y4wZYx1NUtSkAl1fyZJJ4C62dsE=
+
+Name: res/drawable/apptomato.xml
+SHA1-Digest: moCd3AShFtQk8XeMHeD89YKZwgM=
+
+Name: res/drawable/play_history.png
+SHA1-Digest: jZJRNKY5ClM2H+sOObyEE205U+0=
+
+Name: res/drawable-320dpi/conn_stat_wifi_signal_3.png
+SHA1-Digest: yjYndXrCqu0B1jHfBR9f9WC2268=
+
+Name: res/drawable/apporangered.xml
+SHA1-Digest: d/lMEOxmV0HfcLzfZYJYJZVtsx0=
+
+Name: res/drawable/tv_window_selector_state.xml
+SHA1-Digest: iqMjQc+0GSbIwujRy+pHmqnKetQ=
+
+Name: res/drawable-320dpi/indicator_background_focused.png
+SHA1-Digest: vJmmc0ZyNK9KHSodMcLyCjxYEM8=
+
+Name: res/drawable-hdpi/recommend2.png
+SHA1-Digest: N3MQgzemp3A1pQwpOnMAgfPbYV8=
+
+Name: res/drawable/appred.xml
+SHA1-Digest: VJcgnVvuet6q57cGmU9sxD3N4Oc=
+
+Name: res/drawable-hdpi/mainview_cloudlist.png
+SHA1-Digest: I3zEbaeWXlmLIXyQZzlk96UZhac=
+
+Name: res/drawable/tab_title_background.xml
+SHA1-Digest: rOfmVKCgLe32yrThR4qn/bAnBeQ=
+
+Name: res/drawable-hdpi/background6.png
+SHA1-Digest: NQcz7JWh8fKjmpzkNa7YzTVHJqQ=
+
+Name: res/drawable/bottom.png
+SHA1-Digest: hwRw6416wNGqkTcbWAC5p4DqPIo=
+
+Name: res/layout/top_layout_status.xml
+SHA1-Digest: zemA70w0GOKWNe5BREIv74rebyU=
+
+Name: res/drawable/orang.png
+SHA1-Digest: IjQQBuMgOSwFvrcslCob9HUcnvI=
+
+Name: res/drawable/view_arrow_state.xml
+SHA1-Digest: v9lTAZJtQbsrb1olRp26NX2f2q4=
+
+Name: res/drawable/dangbei1.png
+SHA1-Digest: 0edV1eKBI2FBDU+hNXdcanV8sm4=
+
+Name: res/drawable/view_pager_indicator_button_background.xml
+SHA1-Digest: 3VnOnALQ5fTKPdyM6lCpTbaZK44=
+
+Name: res/drawable-320dpi/default_icon_video.png
+SHA1-Digest: XXdLaMIwxs0DXfHuOinxrgj6l4M=
+
+Name: res/drawable-hdpi/variety_show2.png
+SHA1-Digest: zP1OeDZybxWuttn7u+37Mjl72sE=
+
+Name: res/drawable/item_shadow.9.png
+SHA1-Digest: QRmjUYxECzZvEDsUiWMToqKdUJI=
+
+Name: res/layout/app_item.xml
+SHA1-Digest: m02+ufRqdGuGoPoaXy3myh4St7I=
+
+Name: res/drawable-xxhdpi/ic_launcher.png
+SHA1-Digest: GVIfdEOBv4gEny2T1jDhGGsZOBo=
+
+Name: res/drawable-320dpi/conn_stat_usb_connected.png
+SHA1-Digest: Tg2Bh6aEhCeNNFd3LkMuyDVn8ec=
+
+Name: res/drawable-hdpi/title.png
+SHA1-Digest: +dU+1oGGGg+jzxaatgQloFqWjX0=
+
+Name: res/drawable-hdpi/tv_show.png
+SHA1-Digest: WITVlMdvSDPGMvwpYaTEqt7w+qM=
+
+Name: res/drawable-320dpi/conn_stat_wifi_signal_2.png
+SHA1-Digest: IDcRVPEUCPlB0f30W5se5voZ+O0=
+
+Name: res/drawable/bg_1.9.png
+SHA1-Digest: /xzMcOFDwh6nf3ZQsTnuYtq+Ppg=
+
+Name: res/drawable-hdpi/telepaly2.png
+SHA1-Digest: KMwVz1qbWkp3Nxp8WwIcSLbpIjQ=
+
+Name: res/drawable/xiaoxie.png
+SHA1-Digest: 24M4UPVj1fLABdUK+FxKTnVUpxE=
+
+Name: res/drawable/title_value_style_background.xml
+SHA1-Digest: Ooqm0i/AdVnYjumw5auLiNumO9Q=
+
+Name: res/drawable-hdpi/recommend.png
+SHA1-Digest: JyqPzqBIVQdxF8LD/W4TrwQ5auU=
+
+Name: res/layout/tab_view_indicator_item.xml
+SHA1-Digest: qEYpH9tAyRwV9J4wqyZgTATigpg=
+
+Name: res/drawable-320dpi/conn_stat_eth_disconnected.png
+SHA1-Digest: QW19a2ozaSprtXCBKY+xr5hfSNs=
+
+Name: res/drawable-hdpi/record.png
+SHA1-Digest: NSggwO52+A1lgzJHxTVSUkUbxtM=
+
+Name: res/drawable/bg_4.9.png
+SHA1-Digest: MzC/HubGZKpVPMbGys0+01OENkM=
+
+Name: res/drawable/mainbackground.png
+SHA1-Digest: KX1n+1VNf7/uNtg5qJkZUeE5sHI=
+
+Name: res/drawable-320dpi/default_icon_photo.png
+SHA1-Digest: XD8tnXYs/Rr9S46+dZc1tYYegeE=
+
+Name: resources.arsc
+SHA1-Digest: U3RcyxJZdUrzMTypsCIq0QGlGIc=
+
+Name: res/drawable-320dpi/default_icon_music.png
+SHA1-Digest: QWtdN4PdVMJQslgdJXv/HTlKR0I=
+
+Name: res/drawable/radio_btn_check_false.png
+SHA1-Digest: nb/PQVwEVushzF2FPnSN26CnHng=
+
+Name: res/drawable-hdpi/shaoer2.png
+SHA1-Digest: O4udm86NCiV4q+oXI+ApE4+l3yE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: XTTA45viA21pFCUjJMunT79Msxw=
+
+Name: res/drawable/serch.png
+SHA1-Digest: URQVotzDLWvHmLDeTkDzJCY1taU=
+
+Name: res/drawable-hdpi/movies2.png
+SHA1-Digest: xWLQgwZg0XF5txO8QD0bV+vVMQs=
+
+Name: res/drawable-320dpi/indicator_background_selected.png
+SHA1-Digest: ZIFyaBJBNWxzR/HRAL7NuI788ns=
+
+Name: res/drawable-320dpi/conn_stat_wifi_signal_1.png
+SHA1-Digest: cUsmm3vB/y27JGE8MzeIvFRClag=
+
+Name: res/drawable/bottom_quick_entrance_selector.xml
+SHA1-Digest: SXw9n+LuIofzolk1efC0F06nfkw=
+
+Name: res/drawable/appitemcolor.xml
+SHA1-Digest: moCd3AShFtQk8XeMHeD89YKZwgM=
+
+Name: res/drawable-320dpi/home_tv_selectbox1_s.9.png
+SHA1-Digest: o2OBZaaZF5sXVUMp771hmT7XQZ4=
+
+Name: res/drawable-320dpi/background.png
+SHA1-Digest: +tEdZ5GWRybcKz40JicsCKa2ypU=
+
+Name: classes.dex
+SHA1-Digest: lg1PnWE1uwCHGtGYm5rigwRRTQM=
+
+Name: res/layout/allapplication.xml
+SHA1-Digest: eTA35WNj66YWxtjNb1BrmAaJqZ8=
+
+Name: res/drawable-320dpi/indicator_media_button_bottom_selected.png
+SHA1-Digest: yUCPoriwbIyTLqAsP+xJ7LKdVRU=
+
+Name: res/drawable-320dpi/home_selectbox1_s.9.png
+SHA1-Digest: Tb0aDoXaJorqF35gsooUqPd4M7E=
+
+Name: res/drawable/iconbg.png
+SHA1-Digest: afC3GuUafkXLsMJntT89uj5aAlA=
+
+Name: res/drawable/white_light_10.9.png
+SHA1-Digest: qDemXX0b5mQZJJB/6nPkHvzJRF0=
+
+Name: res/drawable/icon_bg.xml
+SHA1-Digest: zhnhBXMmEBOmqNPYtFjZKyR1q1c=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: wJKhopfnH/wmoeK7Y3xwaHFyZnY=
+
+Name: res/drawable-hdpi/shaoer.png
+SHA1-Digest: aNs8lCrKrKoqmkW4WgXnDHbMKks=
+
+Name: res/drawable-320dpi/indicator_media_photo.png
+SHA1-Digest: Eh3u0deMX5sd7KQIKXxMOLLLZ+8=
+
+Name: res/drawable/appblue.xml
+SHA1-Digest: hggwvBAjC3pCpXMBKvN9xjOehSI=
+
+Name: res/drawable/bg_6.9.png
+SHA1-Digest: qKoMAGoEReE9oeig/mdepK5kp+Y=
+
+Name: res/anim/push_in.xml
+SHA1-Digest: 9e6n/d0v62ITkgHPC+gHWhe5bAw=
+
+Name: res/drawable-xhdpi/ic_launcher.png
+SHA1-Digest: AfPh3OJoypH966MludSW6f1RHg4=
+
+Name: res/drawable/variety_show.png
+SHA1-Digest: b/28YtiLLkeRZkJLypM4F4erIQ4=
+
+Name: res/drawable-320dpi/indicator_media_music.png
+SHA1-Digest: pOVIGeTb3TDvJw1onLDCQtOaf54=
+
+Name: res/drawable/logo.png
+SHA1-Digest: lxP+7/F5sl+y+4pAyFeEExMFMXw=
+
+Name: res/drawable/screen_background.xml
+SHA1-Digest: Z/mx+FtCyW8pC/2GiePLAPR3a/c=
+
+Name: res/drawable/iconfocus.png
+SHA1-Digest: Z1Y2/yGnNrD/h6VBz57IJZmf6PI=
+
+Name: res/drawable-hdpi/background2.png
+SHA1-Digest: 5je3pqx2KVYsBsE55jesvv7VQgk=
+
+Name: res/drawable-320dpi/bottom_divider.png
+SHA1-Digest: eDqupt/Ydu2F2G4eTvxnziBu3NE=
+
+Name: res/drawable-320dpi/conn_stat_usb_disconnected.png
+SHA1-Digest: 8pDURFGh/OuJvWIVJLmycTdytHo=
+
+Name: res/drawable/test_rectangle.xml
+SHA1-Digest: IThMwCelKnUig8C9NwsT8jnH+bY=
+
+Name: res/drawable-320dpi/conn_stat_wifi_signal_0.png
+SHA1-Digest: Yhcry+tDaaM7uWeEIa/5WhEb+BA=
+
+Name: res/drawable-hdpi/mainview_huodong.png
+SHA1-Digest: 67o90tnpYfS3nsdjE2wTGOJU6O0=
+
+Name: res/drawable-hdpi/background3.png
+SHA1-Digest: WoZkg93zvN8oEJbJg1bYAFbMt3A=
+
+Name: res/drawable/cmovies.png
+SHA1-Digest: SspVqXwHTSzqHgKRqzMrMBMSgYA=
+
+Name: res/drawable-320dpi/arrow_bg_select.png
+SHA1-Digest: +jM7zRI0RuNPlzVZa82rR/mz2q0=
+
+Name: res/drawable/media_background.xml
+SHA1-Digest: dKe2JUct3AOWqDiF1aPZLrxs9Bg=
+
+Name: res/color/launcher_default_font.xml
+SHA1-Digest: LkMLBZWeJdM6zr7XDiQzJIzi7Rw=
+
+Name: res/anim/push_out.xml
+SHA1-Digest: Be4uerIdkyZ4BawROaFc8cIpZEo=
+
+Name: res/drawable-hdpi/background10.png
+SHA1-Digest: XbWcWxzazdSuOonnxlFBxgxJDfE=
+
+Name: res/drawable-hdpi/jilu.png
+SHA1-Digest: gjZX7L6gnpbAHGaCTDWgqtESwZU=
+
+Name: res/drawable/appcrimson.xml
+SHA1-Digest: aZOfSV+tTBNKyiIpaLIw+GfXkL8=
+
+Name: res/color/media_item_text_colorstate_list.xml
+SHA1-Digest: j7nRfkzG6oNq38Bl4nd2Chb5hOk=
+
+Name: res/drawable/tv_selector_state.xml
+SHA1-Digest: mQNHogymW+pDHQRZR2yBXOcVMeE=
+
+Name: res/drawable-hdpi/background4.png
+SHA1-Digest: aN2B9hjnFKlHmj2jYNgAKvaYYlo=
+
+Name: res/drawable/mainview_searchsong.png
+SHA1-Digest: nMM2maKuW3uPXSyInKho16o4vQg=
+
+Name: res/drawable-hdpi/quanjuhe.png
+SHA1-Digest: GWU6CFS2I4Er+d372a3Xse/NeK8=
+
+Name: res/drawable-hdpi/background5.png
+SHA1-Digest: PQguEImK9ups0ThTi1drkN26RdE=
+
+Name: res/drawable/appdeeppink.xml
+SHA1-Digest: DXVGu5kJ3W7E4Upn2MDNJGTzX9E=
+
+Name: res/drawable/blue.png
+SHA1-Digest: Ng7FMxtC6yrrZqtzTPE59uwONPY=
+
+Name: res/drawable/appbisque.xml
+SHA1-Digest: FUQbsb61GMqIi4Qh9w6qQbdttQI=
+
+Name: res/drawable/yellow.png
+SHA1-Digest: Sozbb98o0c4E99JjzeD0k9K7MKg=
+
+Name: res/drawable-hdpi/background11.png
+SHA1-Digest: 9R/+imROcLx4f5wJ8SmRNs7NBKg=
+
+Name: res/drawable/setting.png
+SHA1-Digest: uOrAqXyZfL2dv8WdyKDLSZ6N+A4=
+
+Name: res/drawable-320dpi/wifi_disconnect.png
+SHA1-Digest: KAlCDWnxj0qflkeCCJy258BzIL0=
+
+Name: res/drawable-320dpi/conn_stat_eth_unreachable.png
+SHA1-Digest: Nh/l50STLhgKiUTv/ZIIhrgKzBQ=
+
+Name: res/drawable/bluec.png
+SHA1-Digest: ksKVygi+XQRegJPzXo5lkfR7Ai4=
+
+Name: res/drawable-hdpi/movies.png
+SHA1-Digest: kvX8WTzTgpyEq5c1YZRJTSVj2V8=
+
+Name: res/drawable-hdpi/background7.png
+SHA1-Digest: pNfeQeSRBWRD74iVnYJPJErL9PI=
+
+Name: res/drawable/appnavy.xml
+SHA1-Digest: 5mklsjUZol5VDMbQ80HV4jl8kHk=
+
+Name: res/drawable/appdarkblue.xml
+SHA1-Digest: PXdRz+joNOeOjWJqc5BDLgkFHXA=
+
+Name: res/drawable/green.png
+SHA1-Digest: A6KzAwg/4nwHOsrr2a9iYb0xRBo=
+
+Name: res/drawable-hdpi/background8.png
+SHA1-Digest: Pium7LpeFL9HiV2+XND7psBYTZg=
+
+Name: res/drawable/selected_state.xml
+SHA1-Digest: 3gmRKFV3EaoiWW4CBgQ+zJk7p7Y=
+
+Name: res/drawable/app_item_background.xml
+SHA1-Digest: mQNHogymW+pDHQRZR2yBXOcVMeE=
+
+Name: res/drawable/radio_btn_check_true.png
+SHA1-Digest: 5kALgq+lwCddUOUH9Yp7x/NDsvU=
+
+Name: res/drawable/pink.png
+SHA1-Digest: 3JTFWdem/EcvLHPITZxviYF+WmE=
+
+Name: res/drawable-320dpi/input_source_divider.png
+SHA1-Digest: s6ALzAp3y50vjqUwyM2vHYAY4BQ=
+
+Name: res/drawable-hdpi/mine_handler.png
+SHA1-Digest: aUF3y56L3KzLOFcv9jtCmSmD768=
+
+Name: res/drawable-hdpi/jilu2.png
+SHA1-Digest: fJZhvL0/NSdmXwEGNVHU8j1iWO8=
+
+Name: res/drawable-320dpi/conn_stat_eth_connected.png
+SHA1-Digest: hYVzF3tFXY51SNWZ0cmPCaUYCYo=
+
+Name: res/layout/reflecitem_main.xml
+SHA1-Digest: uV3xUQS4R7p2wwpuXY/foMCqtmM=
+
+Name: res/drawable-320dpi/indicator_media_video.png
+SHA1-Digest: AVVUoIlDsye0kW6viBx2jR3n2eg=
+
+Name: res/drawable/app_page_grey_rect_background.xml
+SHA1-Digest: rwfBvAtvgGXSf1TppyeNhR1Q5x4=
+
+Name: res/drawable-hdpi/background9.png
+SHA1-Digest: pCHL6hSxMYoLN5+5/ct7R/T6Wiw=
+
+Name: res/drawable/applightblue.xml
+SHA1-Digest: dnu3QiVlR9NRxUgCqi33oBwcC4E=
+
