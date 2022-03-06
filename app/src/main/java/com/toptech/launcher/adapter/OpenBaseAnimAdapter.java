@@ -29,7 +29,7 @@ public class OpenBaseAnimAdapter extends BaseAnimAdapter {
 
     @Override // com.toptech.launcher.adapter.IAnimAdapter, com.toptech.launcher.adapter.BaseAnimAdapter
     public void onInitAdapter(MainUpView view) {
-        view.setVisibility(4);
+        view.setVisibility(View.INVISIBLE);
     }
 
     public void setDrawUpRectEnabled(boolean isDrawUpRect2) {
@@ -110,7 +110,7 @@ public class OpenBaseAnimAdapter extends BaseAnimAdapter {
                     OpenBaseAnimAdapter.this.isInDraw = false;
                 }
                 if (OpenBaseAnimAdapter.this.mIsHide) {
-                    OpenBaseAnimAdapter.this.getMainUpView().setVisibility(8);
+                    OpenBaseAnimAdapter.this.getMainUpView().setVisibility(View.GONE);
                 }
                 if (OpenBaseAnimAdapter.this.mNewAnimatorListener != null) {
                     OpenBaseAnimAdapter.this.mNewAnimatorListener.onAnimationStart(focusView, animation);

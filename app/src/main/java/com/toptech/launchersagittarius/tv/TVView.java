@@ -266,7 +266,7 @@ public class TVView extends SurfaceView implements SurfaceHolder.Callback {
         if (this.mCreateFromLayout) {
             setTVshow(false);
             Log.d(this.TAG, "***********close tv view*****************");
-            setVisibility(4);
+            setVisibility(INVISIBLE);
             return;
         }
         this.mWM.removeViewImmediate(this);
@@ -283,7 +283,7 @@ public class TVView extends SurfaceView implements SurfaceHolder.Callback {
         if (this.mCreateFromLayout) {
             setTVshow(true);
             Log.d(this.TAG, "***********open tv view*****************");
-            setVisibility(0);
+            setVisibility(VISIBLE);
             return;
         }
         this.mWM.addView(this, this.surfaceParams);
@@ -370,7 +370,7 @@ public class TVView extends SurfaceView implements SurfaceHolder.Callback {
 
     public void init() {
         Log.d(this.TAG, "mCreateFromLayout===" + this.mCreateFromLayout);
-        this.mAudioManager = (AudioManager) this.mContext.getSystemService("audio");
+        this.mAudioManager = (AudioManager) this.mContext.getSystemService(Context.AUDIO_SERVICE);
         this.mTvCecManager = TvCecManager.getInstance();
         this.mHandler = new ChangeTVStatus(this);
         if (this.mCreateFromLayout) {
@@ -391,7 +391,7 @@ public class TVView extends SurfaceView implements SurfaceHolder.Callback {
             this.surfaceParams.flags = 24;
             Log.v(this.TAG, "openSurfaceView===" + this.surfaceParams);
             this.surfaceParams.gravity = 51;
-            this.mWM = (WindowManager) this.mContext.getSystemService("window");
+            this.mWM = (WindowManager) this.mContext.getSystemService(Context.WINDOW_SERVICE);
         }
         initVideoView();
     }
@@ -578,7 +578,7 @@ public class TVView extends SurfaceView implements SurfaceHolder.Callback {
 
     public boolean is1280x720(Context context) {
         DisplayMetrics displayMetrics = new DisplayMetrics();
-        ((WindowManager) context.getSystemService("window")).getDefaultDisplay().getMetrics(displayMetrics);
+        ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMetrics);
         return displayMetrics.widthPixels == 1280 && displayMetrics.heightPixels == 720;
     }
 

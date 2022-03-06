@@ -28,7 +28,7 @@ public class JsonServer extends IntentService {
     }
 
     public void onCreate() {
-        this.connectivityManager = (ConnectivityManager) getSystemService("connectivity");
+        this.connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         this.netInfo = this.connectivityManager.getActiveNetworkInfo();
         this.mSagittariusTool = SagittariusTool.getInstance();
         this.ALBUM_PATH = getCacheDir().getAbsolutePath() + "/Picture";

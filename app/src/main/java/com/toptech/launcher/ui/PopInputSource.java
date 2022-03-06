@@ -58,7 +58,7 @@ public class PopInputSource extends LinearLayout implements View.OnClickListener
             /* class com.toptech.launcher.ui.PopInputSource.AnonymousClass1 */
 
             public void handleMessage(Message msg) {
-                PopInputSource.this.setVisibility(8);
+                PopInputSource.this.setVisibility(GONE);
                 super.handleMessage(msg);
             }
         };
@@ -82,7 +82,7 @@ public class PopInputSource extends LinearLayout implements View.OnClickListener
             /* class com.toptech.launcher.ui.PopInputSource.AnonymousClass1 */
 
             public void handleMessage(Message msg) {
-                PopInputSource.this.setVisibility(8);
+                PopInputSource.this.setVisibility(GONE);
                 super.handleMessage(msg);
             }
         };
@@ -186,7 +186,7 @@ public class PopInputSource extends LinearLayout implements View.OnClickListener
 
     public void run() {
         ((ViewGroup) getParent()).requestFocus();
-        setVisibility(8);
+        setVisibility(GONE);
     }
 
     public boolean onKey(View view, int keyCode, KeyEvent event) {
@@ -267,7 +267,7 @@ public class PopInputSource extends LinearLayout implements View.OnClickListener
         if (isShown()) {
             removeCallbacks(this);
         } else {
-            setVisibility(0);
+            setVisibility(VISIBLE);
             getChildAt(getCurrInputSource() * 2).requestFocus();
         }
         postDelayed(this, paramLong);

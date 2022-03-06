@@ -15,7 +15,7 @@ public class NetworkStateMonitor {
         /* class com.toptech.launcher.net.NetworkStateMonitor.AnonymousClass1 */
 
         public void onReceive(Context context, Intent intent) {
-            NetworkInfo info = ((ConnectivityManager) context.getSystemService("connectivity")).getActiveNetworkInfo();
+            NetworkInfo info = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
             if (info == null) {
                 return;
             }

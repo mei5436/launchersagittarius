@@ -96,7 +96,7 @@ public class TopRightStatusBar extends LinearLayout implements NetworkMonitor.IN
 
     private void initNetworkStatusImg() {
         File[] file;
-        ConnectivityManager localConnectivityManager = (ConnectivityManager) this.mContext.getSystemService("connectivity");
+        ConnectivityManager localConnectivityManager = (ConnectivityManager) this.mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
         boolean bWIFIisA = localConnectivityManager.getNetworkInfo(1).isAvailable();
         boolean bWIFIisC = localConnectivityManager.getNetworkInfo(1).isConnected();
         NetworkInfo networkInfo = localConnectivityManager.getNetworkInfo(ConnectivityManager.TYPE_ETHERNET);
@@ -124,7 +124,7 @@ public class TopRightStatusBar extends LinearLayout implements NetworkMonitor.IN
     }
 
     private void setNetworkStatusImg() {
-        ConnectivityManager localConnectivityManager = (ConnectivityManager) this.mContext.getSystemService("connectivity");
+        ConnectivityManager localConnectivityManager = (ConnectivityManager) this.mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
         boolean bWIFIConnect = localConnectivityManager.getNetworkInfo(1).isConnectedOrConnecting();
         boolean bETHERNETConnnect = localConnectivityManager.getNetworkInfo(9).isConnectedOrConnecting();
         if (bWIFIConnect || !bETHERNETConnnect) {

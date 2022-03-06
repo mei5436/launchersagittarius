@@ -19,7 +19,7 @@ public class AnimNoDrawAdapter extends BaseAnimAdapter {
 
     @Override // com.toptech.launcher.adapter.IAnimAdapter, com.toptech.launcher.adapter.BaseAnimAdapter
     public void onInitAdapter(MainUpView view) {
-        view.setVisibility(4);
+        view.setVisibility(View.INVISIBLE);
         view.setBackgroundDrawable(view.getUpRectDrawable());
     }
 
@@ -82,7 +82,7 @@ public class AnimNoDrawAdapter extends BaseAnimAdapter {
 
             public void onAnimationStart(Animator animation) {
                 if (AnimNoDrawAdapter.this.mIsHide) {
-                    AnimNoDrawAdapter.this.getMainUpView().setVisibility(8);
+                    AnimNoDrawAdapter.this.getMainUpView().setVisibility(View.GONE);
                 }
             }
 

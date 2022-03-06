@@ -147,6 +147,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
                         Thread.sleep(100);
                         Log.d("zsr", "do back");
                     } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 }
             }
@@ -287,15 +288,15 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
     /* access modifiers changed from: protected */
     @Override // android.support.v4.app.FragmentActivity
     public void onCreate(Bundle savedInstanceState) {
-        this.mAudioManager = (AudioManager) getSystemService("audio");
+        this.mAudioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
         setContentView(R.layout.activity_main);
         getWindow().addFlags(AccessibilityEventCompat.TYPE_TOUCH_INTERACTION_START);
         this.IR_TYPE = (String) SystemProperties.get("mstar.toptech.remote", "0");
         this.mHandler = new AppFragmentHandler(this);
         this.mPackageManager = getPackageManager();
-        this.manager = (ActivityManager) getSystemService("activity");
+        this.manager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         this.mLoaderManager = getLoaderManager();
-        this.connectivityManager = (ConnectivityManager) getSystemService("connectivity");
+        this.connectivityManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
         this.netInfo = this.connectivityManager.getActiveNetworkInfo();
         this.mSagittariusTool = SagittariusTool.getInstance();
         this.mTvFlag = false;
@@ -474,7 +475,8 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
             Intent intent = new Intent("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.LAUNCHER");
             intent.setComponent(componentName);
-            intent.setFlags(270532608);
+//            intent.setFlags(270532608);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
             this.tvClick = true;
             startActivity(intent);
         } else {
@@ -569,6 +571,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
                 forceStopPackage.setAccessible(true);
                 forceStopPackage.invoke(this.manager, runningTaskInfos.get(1).topActivity.getPackageName());
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
@@ -585,7 +588,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
     /* access modifiers changed from: private */
     /* access modifiers changed from: public */
     private void killActivityThrPKG(String pkg) {
-        ((ActivityManager) getSystemService("activity")).killBackgroundProcesses(pkg);
+        ((ActivityManager) getSystemService(ACTIVITY_SERVICE)).killBackgroundProcesses(pkg);
     }
 
     private void killActivityAll(Activity context) {
@@ -605,7 +608,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
                     }
                 }
             }
-            ActivityManager am = (ActivityManager) getSystemService("activity");
+            ActivityManager am = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
             List<ActivityManager.RunningAppProcessInfo> infoList = am.getRunningAppProcesses();
             if (infoList != null) {
                 for (int i = 0; i < infoList.size(); i++) {
@@ -726,7 +729,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
 
     private void closeTvView() {
         if (this.isShowTvView) {
-            this.shade.setVisibility(0);
+            this.shade.setVisibility(View.VISIBLE);
             muteTvWindow(true);
             this.isShowTvView = false;
         }
@@ -739,7 +742,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
         } else if (!this.isShowTvView) {
             this.shade.clearAnimation();
             this.shade.startAnimation(this.hide);
-            this.shade.setVisibility(4);
+            this.shade.setVisibility(View.INVISIBLE);
             muteTvWindow(false);
             this.isShowTvView = true;
         }
@@ -867,14 +870,14 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
                 return;
             case R.id.recommendation /*{ENCODED_INT: 2131099693}*/:
                 if (this.mCommendList == null || this.mCommendPosition >= this.mCommendList.size()) {
-                    Toast.makeText(this, "Please check your network connection", 0).show();
+                    Toast.makeText(this, "Please check your network connection", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 Log.e(TAG, "Commend list url -->> " + this.mCommendList.get(this.mCommendPosition).view);
                 Intent intent6 = new Intent("com.dangbeimarket.action.act.detail");
                 intent6.putExtra("url", this.mCommendList.get(this.mCommendPosition).view);
                 intent6.putExtra("transfer", "dingke");
-                intent6.setFlags(268435456);
+                intent6.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
                 startActivity(intent6);
                 return;
             case R.id.page_settings /*{ENCODED_INT: 2131099695}*/:
@@ -897,7 +900,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
         }
         Intent localIntent = new Intent("android.intent.action.MAIN");
         localIntent.addCategory("android.intent.category.LAUNCHER");
-        localIntent.setFlags(268435456);
+        localIntent.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
         localIntent.setComponent(componentName);
         context.startActivity(localIntent);
     }
@@ -910,7 +913,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
     }
 
     private String getTopActivity(Context context) {
-        List<ActivityManager.RunningTaskInfo> runningTaskInfos = ((ActivityManager) context.getSystemService("activity")).getRunningTasks(1);
+        List<ActivityManager.RunningTaskInfo> runningTaskInfos = ((ActivityManager) context.getSystemService(ACTIVITY_SERVICE)).getRunningTasks(1);
         if (runningTaskInfos != null) {
             return runningTaskInfos.get(0).topActivity.toString();
         }

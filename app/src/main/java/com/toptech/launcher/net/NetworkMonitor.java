@@ -31,7 +31,7 @@ public class NetworkMonitor extends BroadcastReceiver {
     public NetworkMonitor(Context context, INetworkUpdateListener paramINetworkUpdateListener) {
         this.mContextRef = new WeakReference<>(context);
         this.mListener = paramINetworkUpdateListener;
-        this.localConnectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
+        this.localConnectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
     }
 
     private Bundle getCurrentConnectivityInfo() {
