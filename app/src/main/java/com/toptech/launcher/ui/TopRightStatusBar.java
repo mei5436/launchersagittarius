@@ -56,7 +56,7 @@ public class TopRightStatusBar extends LinearLayout implements NetworkMonitor.IN
         super(context, attrs);
         this.mContext = context;
         View mBarLayour = LayoutInflater.from(context).inflate(R.layout.top_layout_status, (ViewGroup) this, true);
-        setOrientation(0);
+        setOrientation(HORIZONTAL);
         this.mUsbStatusImageView = (ImageView) mBarLayour.findViewById(R.id.top_right_usb_state);
         this.mNetworkStatusImageView = (ImageView) mBarLayour.findViewById(R.id.top_right_network_state);
         this.mTextClock = (TextClock) mBarLayour.findViewById(R.id.top_right_clock);
