@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:id="@id/top_logo" android:visibility="gone" android:layout_width="@dimen/y40" android:layout_height="@dimen/x40" android:layout_marginLeft="@dimen/y20" android:src="@drawable/logo" android:layout_alignParentLeft="true" />
-        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@dimen/y10" android:layout_alignParentRight="true">
-            <ImageView android:id="@id/top_right_usb_state" android:layout_width="@dimen/y39" android:layout_height="@dimen/x39" android:layout_margin="@dimen/x10" android:src="@drawable/conn_stat_usb_disconnected" />
-            <ImageView android:id="@id/top_right_network_state" android:layout_width="@dimen/y40" android:layout_height="@dimen/x40" android:layout_margin="@dimen/x10" android:src="@drawable/conn_stat_eth_disconnected" />
-            <android.widget.TextClock android:textSize="@dimen/x30" android:id="@id/top_right_clock" android:layout_width="wrap_content" android:layout_height="@dimen/x40" android:layout_margin="@dimen/x6" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@id/top_logo"
+            android:layout_width="@dimen/y40"
+            android:layout_height="@dimen/x40"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/y20"
+            android:src="@drawable/logo"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@dimen/y10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/top_right_usb_state"
+                android:layout_width="@dimen/y39"
+                android:layout_height="@dimen/x39"
+                android:layout_margin="@dimen/x10"
+                android:src="@drawable/conn_stat_usb_disconnected" />
+
+            <ImageView
+                android:id="@id/top_right_network_state"
+                android:layout_width="@dimen/y40"
+                android:layout_height="@dimen/x40"
+                android:layout_margin="@dimen/x10"
+                android:src="@drawable/conn_stat_eth_disconnected" />
+
+            <android.widget.TextClock
+                android:id="@id/top_right_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x40"
+                android:layout_margin="@dimen/x6"
+                android:textSize="@dimen/x30" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

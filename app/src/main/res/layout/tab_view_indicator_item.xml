@@ -1,3 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.open.androidtvwidget.view.TextViewWithTTF android:textSize="@dimen/text_size_50" android:textColor="@android:color/background_light" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_tab_indicator" android:background="@drawable/tab_title_background" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/tab_highlight_height" app:ttf_name="@string/nav_tab_normal_ttf"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+<com.toptech.launcher.ui.TextViewWithTTF xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/tv_tab_indicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/tab_title_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:minHeight="@dimen/tab_highlight_height"
+    android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:textColor="@android:color/background_light"
+    android:textSize="@dimen/text_size_50"
+    app:ttf_name="@string/nav_tab_normal_ttf" />
