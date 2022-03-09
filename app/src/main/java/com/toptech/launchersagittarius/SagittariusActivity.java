@@ -699,7 +699,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
                 this.appGridView.setFocusableInTouchMode(true);
                 this.mOldFocus = newFocus;
                 this.refocusview = false;
-            } else if (newFocus.getId() != 2131099699) {
+            } else if (newFocus.getId() != R.id.page3_gridview) {
                 this.mainUpView1.setFocusView(newFocus, this.mOldFocus, 1.0f);
                 this.mOldFocus = newFocus;
             } else {
@@ -877,7 +877,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
                 Intent intent6 = new Intent("com.dangbeimarket.action.act.detail");
                 intent6.putExtra("url", this.mCommendList.get(this.mCommendPosition).view);
                 intent6.putExtra("transfer", "dingke");
-                intent6.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+                intent6.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent6);
                 return;
             case R.id.page_settings /*{ENCODED_INT: 2131099695}*/:
@@ -900,7 +900,7 @@ public class SagittariusActivity extends FragmentActivity implements ViewTreeObs
         }
         Intent localIntent = new Intent("android.intent.action.MAIN");
         localIntent.addCategory("android.intent.category.LAUNCHER");
-        localIntent.setFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+        localIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         localIntent.setComponent(componentName);
         context.startActivity(localIntent);
     }

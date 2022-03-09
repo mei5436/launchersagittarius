@@ -53,7 +53,7 @@ public class AllAppListActivity extends Activity {
             Intent mIntent = AllAppListActivity.this.getPackageManager().getLaunchIntentForPackage(appInfo.activityInfo.packageName);
             if (mIntent != null) {
                 AllAppListActivity.this.showtoast(appInfo.activityInfo.packageName);
-                mIntent.addFlags(Intent.FLAG_RECEIVER_FOREGROUND);
+                mIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 try {
                     AllAppListActivity.this.startActivity(mIntent);
                 } catch (ActivityNotFoundException e) {
